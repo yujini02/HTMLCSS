@@ -1,0 +1,24 @@
+html, body{
+    height: 100%;
+}
+body{
+    display: flex;
+    /* 주축정렬 */
+    /* justify-content:space-around; */
+    flex-direction: column;
+    justify-content:flex-start;
+    /* align-items: flex-end; */
+    /* 축방향
+    justify-content: 주축(기본값 : 가로);
+    align-items: 교차축(기본값 : 세로) 
+    flex-direction 을 사용하여 주축과 교차축을 바꿀 수 있다. */
+}
+div{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(186, 142, 228);
+}
+
+#second{
+    background-color: bisque;
+}

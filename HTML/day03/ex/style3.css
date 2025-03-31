@@ -1,0 +1,15 @@
+body{
+    height: 1000vh;
+}
+div{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(186, 142, 228);
+
+    position: static;
+}
+
+#second{
+    background-color: bisque;
+    position: fixed;
+}
