@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>회원 가입</title>
+    <style>
+      #container {
+        width:600px;
+        margin:10px auto;
+      }
+    </style>
+  </head>
+  <body> 
+    <div id="container">
+      <h1>회원 가입을 환영합니다</h1>
+      <form action="myform.html" method="get">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul>
+                <li>
+                    <label for="user_id">아이디<input type="text" name="user_id" id="user_id" autofocus placeholder="4자~10자 사이, 공백없이" required></label>       
+                </li>
+                <li><label for="email">이메일<input type="text" name="email" id="email" required></label></li>
+                <li><label for="password">비밀번호<input type="password" name="pwd" id="pwd1" placeholder="문자와 숫자, 특수문자 포함 15글자 이내" required></label></li>
+                <li><label for="password">비밀번호 확인<input type="password" name="checkpwd" id="pwd2" required></label></li>
+                <li><label for="profile">사진<input type="file" name="profile" id="profile"></label></li>
+                <li><label for="birth">생년월일<input type="date" name="birth" id="birth"></label></li>
+                <li><label for="path">가입경로<select name="path" id="path">
+                    <option value="blog">블로그</option>
+                    <option value="search">검색</option>
+                    <option value="sns">SNS</option>
+                </select></label></li>
+                <li><label for="memo">메모<textarea name="memo" id="memo"></textarea></label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <label for="mail_yes"><input type="radio" name="mail" id="mail_yes" value="yes">메일 수신</label>
+            <label for="mail_no"><input type="radio" name="mail" id="mail_no" value="no">메일 수신 안 함</label>
+        </fieldset>
+        <input type="submit" value="가입하기"> <input type="reset" value="취소">
+      </form>
+
+    </div>           
+  </body>
+</html>
